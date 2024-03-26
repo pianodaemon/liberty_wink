@@ -12,13 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloServlet extends HttpServlet {
 
   @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-  PrintWriter writer = resp.getWriter();
-  writer.println("<!DOCTYPE html>");
-  writer.println("<html>");
-  writer.println("<body>");
-  writer.println("<p>Hello World!</p>");
-  writer.println("</body>");
-  writer.println("</html>");
+  protected void doGet(HttpServletRequest req,
+		       HttpServletResponse resp) throws ServletException, IOException {
+      PrintWriter writer = resp.getWriter();
+      writer.println("<!DOCTYPE html>");
+      writer.println("<html>");
+      writer.println("<body>");
+      writer.println("<p>Hello World!</p>");
+      writer.println("</body>");
+      writer.println("</html>");
   }
 }
